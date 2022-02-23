@@ -1,0 +1,39 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main Content: Project page -->
+  <main >
+    <%- include partials/content.ejs %>
+        <!--First Project: Bug Smasher-->
+        <div>
+            <img src="/Assets/images/pj1.png" alt="project1" class="rounded float-start" width="40%" hspace="30">
+            <h1 id="lgreen"> Bug Smasher</h1>
+        <h3 id="introduce"> This is a game where you click on a bug to get a point. I worked on this project using JavaScript, html, and css. 
+            When a click event occurs on a bug object, I coded it by randomly moving the bug's location and getting one point at the same time.
+        </h3>
+        </div><br><br><br><br><br>
+        <!--Second Project: Photo Gallery-->
+        <div>
+            <img src="/Assets/images/pj2.png" alt="project2" class="rounded float-end" width="40%" hspace="30">
+            <h1 id="lgreen"> Photo Gallery</h1>
+        <h3 id="introduce"> This is a photo gallery that shows various picture automatically. I worked on this project using JavaScript, html, and css. 
+            I coded the photo to change automatically without clicking, and I made the enlarged photo appear when the photo is clicked. 
+            I also created a function to add the picture to favourites list.
+        </h3>
+        </div><br><br><br><br><br>
+        <!--Third Project: Real Estate Agent Website-->
+        <div>
+            <img src="/Assets/images/pj3.png" alt="project3" class="rounded float-start" width="25%" hspace="30">
+            <h1 id="lgreen"> Real Estate Agent Website</h1>
+        <h3 id="introduce"> This is the website of real estate agent. I worked on this project using html and css. 
+            I created 7 pages: Homepage, 3 properties listing pages, available properties for sale page, contact, and sitemap and credits page.
+            I made all the pages have a common feeling and tried to communicate information effectively.
+        </h3>
+        </div>
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

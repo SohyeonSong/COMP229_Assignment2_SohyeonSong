@@ -1,0 +1,121 @@
+/*
+
+Student's Name: Sohyeon Song
+StudentID: 301145311
+*/
+
+/*Determine the properties of the background*/
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 650px;
+  padding-top: 100px;
+  background: #e0ebef;
+}
+
+/*Determine the degree of curve*/
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+/*Using ellipse to express wave*/
+/*First ellipse*/
+.curve::before {
+  content: '';
+  display: white;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(-6%, 60%);
+  background-color: white;
+}
+
+/*Second ellipse*/
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #e0e8ef;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.container1 {
+  width: 60%; 
+}
+
+.container2 {
+  width: auto; 
+  height: 1300px;
+  text-align: center;
+  padding-top:200px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/*Remove the border of card*/
+.card {
+  height: 300px;
+  border: 0;
+  outline: 0;
+}
+
+/*Prevent horizontal scrolling*/
+main {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+#introduce {
+  text-align: justify;
+}
+
+#form {
+  border: solid rgb(154, 196, 245) 5px;
+  border-radius: 3px;    
+  width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#exampleFormControlInput1{
+  text-align: center;
+}
+
+#lgreen {
+  color: rgb(198, 225, 255);
+}
+
+#green {
+  color: rgb(5, 19, 29);
+}
+
+#card1 {
+  color: black;
+  background-color: grey;
+}
+#card2 {
+  color: black;
+  background-color: rgb(138, 159, 252);
+}
+#card3 {
+  color: black;
+  background-color: rgb(230, 178, 243);
+}
+#card4 {
+  color: black;
+  background-color:rgb(243, 243, 180);
+}

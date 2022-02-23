@@ -1,0 +1,60 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main Content: Home page -->
+<main >
+  <%- include partials/content.ejs %>
+    <div class="row" >
+      <!--Card 1 for link to about page-->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body" >
+            <h1 class="card-title" id="card1"><br>ABOUT ME</h1><br>
+            <h3 class="card-text" >If you want to know more about me</h3><br><br><br>
+            <a href="/about" class="btn btn-outline-secondary">Click here to learn more</a>
+          </div>
+        </div>
+      </div>
+      <!--Card 2 for link to projects page-->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title" id="card2"><br>PROJECTS</h1><br>
+            <h3 class="card-text">If you want to see the projects</h3><br><br><br>
+            <a href="/projects" class="btn btn-outline-success">Click here to see</a>
+          </div>
+        </div>
+      </div>
+      <!--Card 3 for link to services page-->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title" id="card3"><br><br><br><br>SERVICES</h1><br>
+            <h3 class="card-text" >If you want to know more about me</h3><br><br><br>
+            <a href="/services" class="btn btn-outline-danger" >Click here to see</a>
+          </div>
+        </div>
+      </div>
+      <!--Card 4 for link to contact page-->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title"  id="card4"><br><br><br><br>CONTACT</h1><br>
+            <h3 class="card-text" >If you want to know more about me</h3><br><br><br>
+            <a href="/contact" class="btn btn-outline-warning">Click here to contact me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
+
+
+
+

@@ -1,0 +1,55 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main Content: Contact Me page -->
+  <main >
+    <%- include partials/content.ejs %>
+
+        <!--My Personal Info-->
+        <div class="rounded float-end" ><br><br><br>
+            <img src="/Assets/images/contact.png" width=60% alt="contact"><br><br><br><br>
+            <h3>Sohyeon SOng</h3>
+            <h3><a href="mailto:ssong47@my.centennialcollege.ca">Email: ssong47@my.centennialcollege.ca</a></h3>
+            <h3>Phone Number: 416-893-9923</h3>
+        </div>
+        
+        <!--User Input Form-->
+        <div id="form">
+            <h1 id="lgreen">Contact Me!</h1>
+            <h3 id="green">Please complete this form to contact me</h3><br><br><br>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><h3 id="lgreen">First name</h3></label><br>
+                    <input type="text" class="col-sm-10" id="firstN" required="required">
+                </div><br>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><h3 id="lgreen"> Last Name</h3></label><br>
+                    <input type="text" class="col-sm-10" id="lastN" required="required">
+                </div><br>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><h3 id="lgreen">Phone Number</h3></label><br>
+                    <input type="text" class="col-sm-10" id="phone" required="required">
+                </div><br>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><h3 id="lgreen">Email address</h3></label><br>
+                    <input type="email" class="col-sm-10" id="email" placeholder="name@example.com"required="required">
+                </div><br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><h3 id="lgreen">Message</h3></label><br>
+                    <textarea class="form-control" id="Mess" rows="3" required="required"></textarea>
+                </div>
+                <!--showPopup will be executed when user click submit button-->
+                <button type="submit" class="btn btn-outline-success"  onclick="showPopup();">Submit Info</button>&nbsp;&nbsp;&nbsp;
+                <!--Clear form-->
+                <button type="reset" class="btn btn-outline-warning">Clear Form</button>
+            </form>
+        </div>
+
+        
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
