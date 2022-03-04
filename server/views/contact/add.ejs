@@ -1,0 +1,52 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<section>
+    <!--Common backgroud for all page-->
+      <div class="curve"></div>   
+<!-- Content for the Add page-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1 id="login"><%= title %></h1><br>    
+
+            <form class="form" method="POST" id="loginListForm">
+                <div class="form-group">
+                    <label for="nameTextField" id="bold">Contact Name</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Contact Name"
+                    name="name" required><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField" id="bold">Contact Number</label>
+                    <input type="text" class="form-control"
+                    id="numberTextField"
+                    placeholder="Enter the Contact Number"
+                    name="number" required><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField" id="bold">Email Address</label>
+                    <input type="email" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter the Email Address"
+                    name="email" required><br>
+                </div>
+
+                <button class="btn btn-outline-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>&nbsp;
+
+                    <a href="/contact-list" class="btn btn-outline-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>

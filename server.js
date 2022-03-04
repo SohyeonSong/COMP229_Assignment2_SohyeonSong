@@ -9,13 +9,13 @@ StudentID: 301145311
  * Module dependencies.
  */
 
- var app = require('./config/app');
+ var app = require('./server/config/app');
  var debug = require('debug')('comp229---assignment-1:server');
  var http = require('http');
  
- /**
-  * Get port from environment and store in Express.
-  */
+/**
+ * Get port from enviroment and store in Express.
+ */
  
  var port = normalizePort(process.env.PORT || '3000');
  app.set('port', port);
@@ -92,6 +92,6 @@ StudentID: 301145311
      ? 'pipe ' + addr
      : 'port ' + addr.port;
    debug('Listening on ' + bind);
-   console.log(`Assignment 2 Code app listening at http://localhost:${port}`)
+   
  }
  

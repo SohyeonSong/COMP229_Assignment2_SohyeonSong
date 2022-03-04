@@ -1,0 +1,52 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<section>
+    <!--Common backgroud for all page-->
+    <div class="curve"></div>
+
+    <main class="container">
+        <!-- Message Area -->
+        <% if(messages.length > 0) {%>
+            <div class="alert alert-danger">
+                <%= messages %>
+            </div>
+        <% } %>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4">
+                <h1 id="login">Please Login</h1><br>
+                <!-- login form -->
+                <form method="POST" autocomplete="off" id="loginListForm">
+                    <fieldset class="form-group">
+                        <label for="username" id="bold">Username: </label>
+                        <input type="text" class="form-control"
+                        name="username" placeholder="Enter username"
+                        id="username" required autofocus>
+                    </fieldset><br>
+
+                    <fieldset class="form-group">
+                        <label for="password" id="bold">Password: </label>
+                        <input type="password" class="form-control"
+                        name="password" placeholder="Enter password"
+                        id="password" required>
+                        or
+                        <a href="/register" id="register">Register Here</a>
+                    </fieldset><br>
+
+                    <fieldset class="form-group text-right">
+                        <input type="submit" class="btn btn-outline-info" value="Login">
+                        <a href="/">
+                            <input type="button" class="btn btn-outline-warning" value="Cancel">
+                        </a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+</section>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>
